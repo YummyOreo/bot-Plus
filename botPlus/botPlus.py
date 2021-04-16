@@ -1,8 +1,20 @@
 import discord
 from discord.ext import commands
-import color
 import time
 import os
+
+from colorama import init, Fore, Style
+init()
+
+def yellow(text):
+	return Fore.YELLOW + text + Style.RESET_ALL
+
+def green(text):
+	return Fore.GREEN + text + Style.RESET_ALL
+
+def red(text):
+	return Fore.RED + text + Style.RESET_ALL
+
 
 class bot:
 	def __init__(self, settings: {}):
@@ -21,7 +33,7 @@ class bot:
 	def make(self):
 		self.bot = commands.Bot(command_prefix=self.prefix)
 		if self.logging == 'advanced':
-			print(color.green(f"[{time.asctime(time.localtime(time.time()))}]"), f"\032 Bot made with prefix [{self.prefix}]")
+			print(green(f"[{time.asctime(time.localtime(time.time()))}]"), f"\032 Bot made with prefix [{self.prefix}]")
 		else if self.logging == 'normal':
 			print(f"[{time.asctime(time.localtime(time.time()))}]", f"\032 Bot made with prefix [{self.prefix}]")
 		else:
@@ -32,7 +44,7 @@ class bot:
 		@self.bot.event
 		async def on_ready():
 			if self.logging == 'advanced':
-				print(color.green(f"[{time.asctime(time.localtime(time.time()))}]"), f"\032 Bot online.")
+				print(green(f"[{time.asctime(time.localtime(time.time()))}]"), f"\032 Bot online.")
 			else if self.logging == 'normal':
 				print(f"[{time.asctime(time.localtime(time.time()))}]", f"\032 Bot online.")
 			else:
