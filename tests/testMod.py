@@ -43,6 +43,7 @@ class bot:
 		except:
 			self.prefix = "!"
 			print("Error, you need to define the prefix, it has been set to \"!\"")
+		self.all = {loggig: self.logging, prefix: self.prefix}
 
 	def make(self):
 		self.bot = commands.Bot(command_prefix=self.prefix)
@@ -76,12 +77,4 @@ class bot:
 				print(green(f"[{time.asctime(time.localtime(time.time()))}]"), f"\032 Loaded [{cogs[cog]}]")
 			except:
 				print(red(f"[{time.asctime(time.localtime(time.time()))}]"), f"\032 Failed To Load [{cogs[cog]}]")
-	class get:
-		def getBot(self):
-			return self.bot
 
-		def getSettings(self):
-			return {'logging': self.logging, "prefix": self.prefix}
-
-		def getAll(self):
-			return {'settings': {'logging': self.logging, "prefix": self.prefix}, "bot": self.bot}
