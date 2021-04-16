@@ -1,5 +1,4 @@
-./tests
-./botPlus.egg-info
-./build
-./dist
+/botPlus.egg-info
+/build
+/dist
 help.txt

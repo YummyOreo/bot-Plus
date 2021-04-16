@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 DESCRIPTION = 'Set up a Python Discord bot quickly!'
 from os import path
 this_directory = path.abspath(path.dirname(__file__))
