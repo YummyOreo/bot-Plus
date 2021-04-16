@@ -1,5 +1,5 @@
 <h1 align="center">Bot Plus</h1>
-<h3 align="center"><a href="https://pypi.org/project/botPlus/1.0.0/">Website</a></h3>
+<h3 align="center"><a href="https://pypi.org/project/botPlus/">Website</a></h3>
 
 
 --- 

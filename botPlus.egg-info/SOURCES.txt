@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+botPlus/__init__.py
+botPlus/botPlus.py
+botPlus.egg-info/PKG-INFO
+botPlus.egg-info/SOURCES.txt
+botPlus.egg-info/dependency_links.txt
+botPlus.egg-info/requires.txt
+botPlus.egg-info/top_level.txt
