@@ -7,7 +7,7 @@
 ## Install:
 To intall this package:
 ```console
-$ pip install botPlus==1.0.0
+$ pip install botPlus
 ```
 
 ## Set Up a simple bot:
