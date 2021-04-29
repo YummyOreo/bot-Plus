@@ -53,6 +53,7 @@ class bot:
 			print(f"[{time.asctime(time.localtime(time.time()))}]", f"\032 Bot made with prefix [{self.prefix}]")
 		else:
 			pass
+		self.bot.remove_command("help") 
 		return self.bot;
 
 	def run(self, token):
@@ -64,7 +65,6 @@ class bot:
 				print(f"[{time.asctime(time.localtime(time.time()))}]", f"\032 Bot online.")
 			else:
 				pass
-			self.bot.remove_command("help") 
 			return
 
 		self.bot.run(token)
